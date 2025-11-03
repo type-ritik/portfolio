@@ -1,14 +1,14 @@
-import Header from "./components/Header"
-import "./App.css"
+import Header from "./components/Header";
+import "./App.css";
+import FirstContainer from "./components/FirstContainer";
 
 function App() {
   return (
     <>
-    <Header />
-    <h1>Portfolio</h1>
-    <p>Welcome to my portfolio website!</p>
+      <Header />
+      <FirstContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
