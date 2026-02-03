@@ -1,19 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    background-color: #010922;
-    color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  /* background-color: #010922; */
+  background-color: white;
+  color: #000;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+ul {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+
+ul > li {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 2px 0px 2px 6px;
+  background-color: rgba(255, 255, 255, 0.596);
 }
