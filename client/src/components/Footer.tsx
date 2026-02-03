@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <div className="w-full flex flex-col bg-[#a7d0fc] p-4! rounded-sm justify-between mt-6!">
