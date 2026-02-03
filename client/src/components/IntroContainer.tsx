@@ -3,13 +3,13 @@ function IntroContainer() {
     window.open("https://github.com/type-ritik");
   };
   return (
-    <div className="w-full flex bg-[#a7d0fc] p-4! rounded-sm justify-between my-6!">
-      <div className="intro w-3/5 flex flex-col justify-center gap-4">
-        <h1 className="text-8xl leading-tight font-bold flex flex-col">
-          Hello, My name is{" "}
+    <div className="w-full flex not-md:flex-col bg-[#a7d0fc] p-4! rounded-sm justify-between my-6!">
+      <div className="intro w-3/5 flex flex-col justify-center not-md:w-full gap-4">
+        <h1 className="text-8xl! not-md:text-6xl! leading-tight font-bold flex flex-col">
+          Hello,{" "} <br className="not-md:flex hidden" /> My name is{" "}
           <span className="name text-[#6F62C3]">Ritik Sharma</span>
         </h1>
-        <h2 className="text-2xl font-semibold">
+        <h2 className="not-md:text-2xl! font-semibold">
           Backend-focused BCA student building production-ready systems, with
           emphasis on API design, authentication, and system behavior in real
           deployments.
@@ -17,7 +17,7 @@ function IntroContainer() {
         <p className="text-md! bg-gray-50 p-2! rounded">
           I design, build, and deploy full-stack systems — not demos.
         </p>
-        <div className="btn-container w-4/5 flex justify-between my-4!">
+        <div className="btn-container not-md:w-full not-md:pb-2! w-4/5 flex justify-between my-4!">
           <button className="w-2/5 rounded-full cursor-pointer font-semibold hover:bg-[#5741d9] hover:ease-in-out transition-all shadow-xl/20 border-gray-600 hover:shadow-white text-sm py-6! bg-[#655ae0] text-white">
             {"View Projects".toUpperCase()}
           </button>
