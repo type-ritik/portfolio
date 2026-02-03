@@ -6,11 +6,11 @@ function SkillContainer() {
         <div>
           <h3 className="m-4!">Backend Engineering</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Designed REST and GraphQL APIs with authentication and role-based
               access
             </li>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Modeled real-world entities and invariants to maintain data
               integrity
             </li>
@@ -18,11 +18,11 @@ function SkillContainer() {
           <br />
           <h3 className="m-4!">System Design & Deployment</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Deployed independently running backend, client, database, and
               Redis services
             </li>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Managed environment variables, service networking, and production
               failures
             </li>
@@ -30,14 +30,14 @@ function SkillContainer() {
           <br />
           <h3 className="m-4!">Data & State Management</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">PostgreSQL schema design with relational integrity</li>
-            <li className="m-1! p-1! text-md!">Redis for caching and real-time coordination</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">PostgreSQL schema design with relational integrity</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Redis for caching and real-time coordination</li>
           </ul>
           <h3 className="m-4!">Engineering Practices</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">JWT-based authentication and authorization</li>
-            <li className="m-1! p-1! text-md!">Debugging deployment-only failures</li>
-            <li className="m-1! p-1! text-md!">Version control with Git and structured commits</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">JWT-based authentication and authorization</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Debugging deployment-only failures</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Version control with Git and structured commits</li>
           </ul>
         </div>
         <div className="rounded-sm">

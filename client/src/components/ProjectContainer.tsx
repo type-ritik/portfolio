@@ -23,27 +23,27 @@ function ProjectContainer() {
           </p>
           <h3>Architecture:</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">Backend service (API + Auth)</li>
-            <li className="m-1! p-1! text-md!">Client application</li>
-            <li className="m-1! p-1! text-md!">PostgreSQL database</li>
-            <li className="m-1! p-1! text-md!">Redis for caching / real-time coordination</li>
-            <li className="m-1! p-1! text-md!">All services deployed independently on Render</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Backend service (API + Auth)</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Client application</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">PostgreSQL database</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Redis for caching / real-time coordination</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">All services deployed independently on Render</li>
           </ul>
           <h3>Key Engineering Decisions:</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">Chose service separation to avoid tight coupling</li>
-            <li className="m-1! p-1! text-md!">Used Redis to handle shared state and reduce DB load</li>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Chose service separation to avoid tight coupling</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Used Redis to handle shared state and reduce DB load</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Implemented JWT-based authentication to protect private messages
             </li>
           </ul>
           <h3>Challenges & Learnings</h3>
           <ul>
-            <li className="m-1! p-1! text-md!">Encountered issues that only appeared after deployment</li>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">Encountered issues that only appeared after deployment</li>
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Learned how environment configuration impacts system behavior
             </li>
-            <li className="m-1! p-1! text-md!">
+            <li className="m-1! p-1! text-md! not-md:text-sm!">
               Understood why production debugging is different from local
               development
             </li>
