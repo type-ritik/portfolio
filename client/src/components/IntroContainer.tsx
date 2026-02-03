@@ -1,3 +1,5 @@
+import MyImage from '/src/assets/Photo_from_2024-12-15_12-31-13.983656-removebg-preview.png';
+
 function IntroContainer() {
   const handleGithub = () => {
     window.open("https://github.com/type-ritik");
@@ -41,7 +43,7 @@ function IntroContainer() {
 
         <div className="absolute bottom-0 w-full flex justify-center">
           <img
-            src="/src/assets/Photo_from_2024-12-15_12-31-13.983656-removebg-preview.png"
+            src={MyImage}
             alt="Ritik Sharma"
             className="max-h-[90%] object-contain shadow-lg"
           />
