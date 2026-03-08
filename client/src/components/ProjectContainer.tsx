@@ -1,72 +1,54 @@
+import { projects } from "../config/ProjectConfig";
+
 function ProjectContainer() {
   return (
     <>
-      <h1>Projects Section</h1>
-      <div className="w-full flex bg-[#a7d0fc] p-4! rounded-sm justify-between my-6!">
-        <div className="flex flex-col gap-4">
-          <h2 className="not-md:text-3xl!">
-            Project 1: ChatSys - Real-time Chat System{" "}
-            <span className="not-md:text-2xl!">
-              [
-              <a
-                href="https://type-ritik-chat-sys.onrender.com/"
-                className="text-blue-600 mx-5! not-md:text-xl"
+      <div className="w-full h-screen flex items-center">
+        <div
+          id="projects"
+          className="w-full bg-dark-purple-blur  p-4! rounded-2xl border border-light-yellow flex justify-center flex-col text-white"
+        >
+          <h1 className="text-center text-light-yellow">Projects Section</h1>
+          <div className="w-full h-full grid grid-cols-3 gap-4">
+            {projects.map((item, index) => (
+              <div
+                className="w-full h-full border border-light-purple flex flex-col justify-center items-center rounded-2xl"
+                key={index}
               >
-                LIVE
-              </a>
-              ]
-            </span>
-          </h2>
-          <p className="text-md! not-md:text-base! bg-gray-50 p-2! rounded">
-            A production-deployed real-time chat system build to understand
-            service separation, state management, and backend reliability.
-          </p>
-          <h3>Architecture:</h3>
-          <ul>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Backend service (API + Auth)</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Client application</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">PostgreSQL database</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Redis for caching / real-time coordination</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">All services deployed independently on Render</li>
-          </ul>
-          <h3>Key Engineering Decisions:</h3>
-          <ul>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Chose service separation to avoid tight coupling</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Used Redis to handle shared state and reduce DB load</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">
-              Implemented JWT-based authentication to protect private messages
-            </li>
-          </ul>
-          <h3>Challenges & Learnings</h3>
-          <ul>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">Encountered issues that only appeared after deployment</li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">
-              Learned how environment configuration impacts system behavior
-            </li>
-            <li className="m-1! p-1! text-md! not-md:text-sm!">
-              Understood why production debugging is different from local
-              development
-            </li>
-          </ul>
-          <h3>LIinks</h3>
-          <ul>
-            <li className="font-medium ">
-              <a
-                href="https://type-ritik-chat-sys.onrender.com/"
-                className="text-blue-700"
-              >
-                Live Demo
-              </a>
-            </li>
-            <li className="font-medium">
-              <a
-                className="text-blue-700"
-                href="https://github.com/type-ritik/chat-sys"
-              >
-                GitHub Repository
-              </a>
-            </li>
-          </ul>
+                <h2 className="text-lg font-semibold">{item.name}</h2>
+                <p className="text-sm text-gray-300">{item.description}</p>
+                <img
+                  src={item.image}
+                  alt="ChatSys"
+                  className="w-[90%] rounded border border-light-purple m-2!"
+                />
+                <ul className="text-base text-gray-200 w-[90%]">
+                  {item.details.map((detail, idx) => (
+                    <li className="my-1!" key={idx}>
+                      {" "}
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex w-[90%] justify-between text-sm my-2!">
+                  {Object.entries(item.links).map(([key, value], idx) => (
+                    <a href={value} className="text-blue-700" key={idx}>
+                      {key === "liveDemo" ? "Live Demo" : "GitHub"}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* <h3>Links</h3>
+            <ul>
+              <li className="font-medium ">
+              </li>
+              <li className="font-medium">
+
+              </li>
+            </ul> */}
+          </div>
         </div>
       </div>
     </>

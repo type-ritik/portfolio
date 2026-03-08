@@ -43,21 +43,3 @@ p {
   margin-bottom: 10px;
 
 }
-
-ul {
-  list-style-type: square;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  gap: 5px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.137);
-}
-
-ul > li {
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  padding: 2px 0px 2px 6px;
-  background-color: rgba(255, 255, 255, 0.596);
-}

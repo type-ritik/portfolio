@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  --color-light-purple: #492b7c;
+  --color-dark-purple: #1c173a;
+  --color-dark-orange: #ed8a0a;
+  --color-dark-purple-blur: #1c173ae0;
+  --color-yellow: #f6d912;
+  --color-light-yellow: #fff29c;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  background: var(--color-light-yellow);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-purple);
+  border-radius: 4px;
+}
+
+body {
+  background-color: #301551 !important;
+  scroll-behavior: smooth;
+}
