@@ -39,23 +39,6 @@ function IntroContainer() {
             </div>
           </div>
         </div>
-        {/* <div className="user-profile flex w-full lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[600px] rounded-md relative bg-amber-50 overflow-hidden">
-        <div className="absolute top-0 w-full">
-          <div className="flex w-full h-full items-center justify-center bg-zinc-950 py-6">
-            <h1 className="animate-pulse bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-3xl sm:text-5xl lg:text-7xl font-black text-transparent">
-              Hello World
-            </h1>
-          </div>
-        </div>
-
-        <div className="absolute bottom-0 w-full flex justify-center">
-          <img
-            src="/src/assets/Photo_from_2024-12-15_12-31-13.983656-removebg-preview.png"
-            alt="Ritik Sharma"
-            className="max-h-[90%] blur-3xl object-contain shadow-lg"
-          />
-        </div>
-      </div> */}
       </div>
     </div>
   );
