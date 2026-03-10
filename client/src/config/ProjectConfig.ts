@@ -1,5 +1,6 @@
 import ChatSys from "../assets/chatsys-image.png";
 import Blog from "../assets/blog-image.png";
+import Smendship from "../assets/smendship-image.png";
 
 interface ProjectInterface {
   name: string;
@@ -41,8 +42,7 @@ export const projects: Array<ProjectInterface> = [
       liveDemo: "#",
       github: "https://github.com/type-ritik/smendship",
     },
-    image:
-      "https://socialnetworking.solutions/wp-content/uploads/2017/12/Facebook-theme-Package.png",
+    image: Smendship,
   },
   {
     name: "MERN-Blog",

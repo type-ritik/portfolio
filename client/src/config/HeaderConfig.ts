@@ -5,6 +5,6 @@ export const headerNavbar: Array<string> = [
   "About",
   "Projects",
   "Skills",
-  "Achievements",
+  "Approach",
   "Contact",
 ];

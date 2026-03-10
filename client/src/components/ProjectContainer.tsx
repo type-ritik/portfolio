@@ -2,56 +2,71 @@ import { projects } from "../config/ProjectConfig";
 
 function ProjectContainer() {
   return (
-    <>
-      <div className="w-full h-screen flex items-center">
-        <div
-          id="projects"
-          className="w-full bg-dark-purple-blur  p-4! rounded-2xl border border-light-yellow flex justify-center flex-col text-white"
-        >
-          <h1 className="text-center text-light-yellow">Projects Section</h1>
-          <div className="w-full h-full grid grid-cols-3 gap-4">
-            {projects.map((item, index) => (
-              <div
-                className="w-full h-full border border-light-purple flex flex-col justify-center items-center rounded-2xl"
-                key={index}
-              >
-                <h2 className="text-lg font-semibold">{item.name}</h2>
-                <p className="text-sm text-gray-300">{item.description}</p>
+    <div
+      id="projects"
+      className="w-full h-screen items-center flex justify-center my-20!"
+    >
+      <div className="w-full bg-dark-purple-blur p-8! rounded-2xl border border-light-yellow text-white">
+        <h1 className="text-4xl text-center text-light-yellow font-bold mb-12!">
+          Projects
+        </h1>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((item, index) => (
+            <div
+              key={index}
+              className="group bg-[#1a1238] border border-light-purple rounded-2xl overflow-hidden hover:border-light-yellow transition duration-300 hover:scale-[1.02]"
+            >
+              {/* IMAGE */}
+              <div className="overflow-hidden">
                 <img
                   src={item.image}
-                  alt="ChatSys"
-                  className="w-[90%] rounded border border-light-purple m-2!"
+                  alt={item.name}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
                 />
-                <ul className="text-base text-gray-200 w-[90%]">
+              </div>
+
+              {/* CONTENT */}
+              <div className="p-5!">
+                {/* TITLE */}
+                <h2 className="text-xl font-semibold mb-1!">{item.name}</h2>
+
+                {/* DESCRIPTION */}
+                <p className="text-sm text-gray-300 mb-4!">
+                  {item.description}
+                </p>
+
+                {/* DETAILS */}
+                <ul className="text-sm text-gray-200 space-y-2 mb-5! list-disc list-inside">
                   {item.details.map((detail, idx) => (
-                    <li className="my-1!" key={idx}>
-                      {" "}
-                      {detail}
-                    </li>
+                    <li key={idx}>{detail}</li>
                   ))}
                 </ul>
-                <div className="flex w-[90%] justify-between text-sm my-2!">
-                  {Object.entries(item.links).map(([key, value], idx) => (
-                    <a href={value} className="text-blue-700" key={idx}>
-                      {key === "liveDemo" ? "Live Demo" : "GitHub"}
-                    </a>
-                  ))}
+
+                {/* ACTION BUTTONS */}
+                <div className="flex justify-between">
+                  <a
+                    href={item.links.liveDemo}
+                    target="_blank"
+                    className="px-3! py-1! text-sm border border-light-yellow rounded hover:bg-light-yellow hover:text-black transition"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={item.links.github}
+                    target="_blank"
+                    className="px-3! py-1! text-sm border border-light-purple rounded hover:border-light-yellow transition"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
-            ))}
-
-            {/* <h3>Links</h3>
-            <ul>
-              <li className="font-medium ">
-              </li>
-              <li className="font-medium">
-
-              </li>
-            </ul> */}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

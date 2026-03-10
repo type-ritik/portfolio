@@ -1,23 +1,69 @@
 function ApproachContainer() {
   return (
-    <>
-      <h1>How I Work</h1>
-      <div className="w-full flex flex-col bg-[#a7d0fc] p-4! rounded-sm justify-between my-6!">
-        <h3 className="mb-4!">I approach development by first identifying:</h3>
-        <ul>
-          <li className="m-1! p-1! text-md! not-md:text-sm!">Entities</li>
-          <li className="m-1! p-1! text-md! not-md:text-sm!">State</li>
-          <li className="m-1! p-1! text-md! not-md:text-sm!">Invariants</li>
-          <li className="m-1! p-1! text-md! not-md:text-sm!">Failure cases</li>
-        </ul>
-        <br />
-        <p className="text-md! bg-gray-50 p-2! rounded not-md:text-base!">
-          I prefer understanding why systems break instead of masking problems
-          with quick fixes. Deployment is part of the system, not an
-          afterthought.
-        </p>
+    <div id="approach" className="w-full h-screen items-center flex justify-center my-20!">
+      <div className="w-full bg-dark-purple-blur border border-light-yellow rounded-2xl p-8! text-white">
+        {/* Title */}
+        <h1 className="text-4xl text-light-yellow text-center font-bold mb-10!">
+          How I Design Systems
+        </h1>
+
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Entity */}
+          <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! hover:scale-[1.03] transition">
+            <h3 className="text-lg font-semibold text-light-yellow mb-2!">
+              Entities
+            </h3>
+            <p className="text-sm text-gray-300">
+              Identify core domain objects and relationships that represent the
+              system's structure.
+            </p>
+          </div>
+
+          {/* State */}
+          <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! hover:scale-[1.03] transition">
+            <h3 className="text-lg font-semibold text-light-yellow mb-2!">
+              State
+            </h3>
+            <p className="text-sm text-gray-300">
+              Define valid state transitions to ensure system behavior remains
+              predictable and consistent.
+            </p>
+          </div>
+
+          {/* Invariants */}
+          <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! hover:scale-[1.03] transition">
+            <h3 className="text-lg font-semibold text-light-yellow mb-2!">
+              Invariants
+            </h3>
+            <p className="text-sm text-gray-300">
+              Establish rules that must always remain true regardless of system
+              operations.
+            </p>
+          </div>
+
+          {/* Failure */}
+          <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! hover:scale-[1.03] transition">
+            <h3 className="text-lg font-semibold text-light-yellow mb-2!">
+              Failure Cases
+            </h3>
+            <p className="text-sm text-gray-300">
+              Anticipate how the system might break and design safeguards to
+              prevent inconsistent states.
+            </p>
+          </div>
+        </div>
+
+        {/* Philosophy */}
+        <div className="mt-10! flex justify-center">
+          <p className="max-w-2xl text-center text-gray-300 bg-[#1a1238] border border-light-purple px-6! py-4! rounded-lg">
+            I focus on understanding how systems fail rather than masking issues
+            with quick fixes. Designing with invariants and failure cases in
+            mind helps build reliable backend systems.
+          </p>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

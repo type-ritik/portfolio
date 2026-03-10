@@ -9,7 +9,7 @@ function IntroContainer() {
   //   "Backend-focused BCA student building production-ready systems, with emphasis on API design, authentication, and system behavior in real deployments.";
 
   return (
-    <div className="flex w-full -mt-20! h-screen justify-center items-center">
+    <div id="home" className="flex w-full -mt-20! h-screen justify-center items-center">
       <div className="w-full h-80 flex bg-dark-purple-blur not-md:flex-col rounded-2xl border border-light-yellow! justify-center">
         <div className="w-3/5 flex flex-col justify-center not-md:w-full gap-4">
           <h1 className="text-6xl! not-md:text-6xl! gap-3 justify-center items-center leading-tight font-bold flex ">
