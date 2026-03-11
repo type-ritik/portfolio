@@ -6,7 +6,7 @@ function ResumeContactContainer() {
     >
       <div className="w-full bg-dark-purple-blur border border-light-yellow rounded-2xl p-8! text-white">
         {/* TITLE */}
-        <h1 className="text-4xl text-center text-light-yellow font-bold mb-8!">
+        <h1 className="text-5xl! not-md:text-3xl! text-center text-light-yellow font-bold mb-8!">
           Contact
         </h1>
 
@@ -25,7 +25,7 @@ function ResumeContactContainer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* RESUME */}
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
-            <h3 className="text-lg font-semibold mb-2!">Resume</h3>
+            <h3 className="text-lg! font-semibold mb-2!">Resume</h3>
             <a
               href="https://rose-edythe-36.tiiny.site"
               target="_blank"
@@ -37,7 +37,7 @@ function ResumeContactContainer() {
 
           {/* EMAIL */}
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
-            <h3 className="text-lg font-semibold mb-2!">Email</h3>
+            <h3 className="text-lg! font-semibold mb-2!">Email</h3>
             <a
               href="mailto:ritik.vw98@gmail.com"
               className="text-light-yellow font-semibold hover:underline"
@@ -48,7 +48,7 @@ function ResumeContactContainer() {
 
           {/* GITHUB */}
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
-            <h3 className="text-lg font-semibold mb-2!">GitHub</h3>
+            <h3 className="text-lg! font-semibold mb-2!">GitHub</h3>
             <a
               href="https://github.com/type-ritik"
               target="_blank"
@@ -60,7 +60,7 @@ function ResumeContactContainer() {
 
           {/* LINKEDIN */}
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
-            <h3 className="text-lg font-semibold mb-2!">LinkedIn</h3>
+            <h3 className="text-lg! font-semibold mb-2!">LinkedIn</h3>
             <a
               href="https://www.linkedin.com/in/type-ritik/"
               target="_blank"

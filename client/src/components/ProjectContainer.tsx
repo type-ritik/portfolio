@@ -4,10 +4,10 @@ function ProjectContainer() {
   return (
     <div
       id="projects"
-      className="w-full h-screen items-center flex justify-center my-20!"
+      className="w-full h-screen not-md:h-full items-center flex justify-center my-20!"
     >
-      <div className="w-full bg-dark-purple-blur p-8! rounded-2xl border border-light-yellow text-white">
-        <h1 className="text-4xl text-center text-light-yellow font-bold mb-12!">
+      <div className="w-full bg-dark-purple-blur p-8! not-md:p-6! rounded-2xl border border-light-yellow text-white">
+        <h1 className="text-5xl not-md:text-3xl! text-center text-light-yellow font-bold mb-12! not-md:mb-6!">
           Projects
         </h1>
 
@@ -29,15 +29,15 @@ function ProjectContainer() {
               {/* CONTENT */}
               <div className="p-5!">
                 {/* TITLE */}
-                <h2 className="text-xl font-semibold mb-1!">{item.name}</h2>
+                <h2 className="text-xl! font-semibold mb-1!">{item.name}</h2>
 
                 {/* DESCRIPTION */}
-                <p className="text-sm text-gray-300 mb-4!">
+                <p className="text-sm! text-gray-300 mb-4!">
                   {item.description}
                 </p>
 
                 {/* DETAILS */}
-                <ul className="text-sm text-gray-200 space-y-2 mb-5! list-disc list-inside">
+                <ul className="text-sm! text-gray-200 space-y-2 mb-5! list-disc list-inside">
                   {item.details.map((detail, idx) => (
                     <li key={idx}>{detail}</li>
                   ))}
