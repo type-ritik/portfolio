@@ -5,6 +5,16 @@ function IntroContainer() {
     window.open("https://github.com/type-ritik");
   };
 
+  const handleDownloadResume = () => {
+    const pdfUrl = "/src/assets/Resume (1).pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "type_ritik.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // const bio: string =
   //   "Backend-focused BCA student building production-ready systems, with emphasis on API design, authentication, and system behavior in real deployments.";
 
@@ -30,7 +40,10 @@ function IntroContainer() {
         </p> */}
           <div className="flex justify-center">
             <div className="btn-container not-md:gap-6 not-md:flex-col not-md:w-full not-md:pb-2! w-4/5 flex justify-between items-center my-4!">
-              <button className="w-2/5 not-md:w-[90%] rounded-full cursor-pointer font-semibold hover:bg-[#5741d9] hover:ease-in-out transition-all shadow-xl/20 border-gray-600 hover:shadow-white text-sm py-6! bg-[#655ae0] text-white">
+              <button
+                onClick={() => handleDownloadResume()}
+                className="w-2/5 not-md:w-[90%] rounded-full cursor-pointer font-semibold hover:bg-[#5741d9] hover:ease-in-out transition-all shadow-xl/20 border-gray-600 hover:shadow-white text-sm py-6! bg-[#655ae0] text-white"
+              >
                 {"View Resume".toUpperCase()}
               </button>
               <button

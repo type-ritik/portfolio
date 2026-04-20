@@ -27,8 +27,8 @@ function ResumeContactContainer() {
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
             <h3 className="text-lg! font-semibold mb-2!">Resume</h3>
             <a
-              href="https://rose-edythe-36.tiiny.site"
-              target="_blank"
+              href="/src/assets/Resume (1).pdf"
+              download={"type_ritik.pdf"}
               className="text-light-yellow font-semibold hover:underline"
             >
               View Resume
