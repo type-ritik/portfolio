@@ -25,7 +25,7 @@ function ApproachContainer() {
             <h3 className="text-lg! font-semibold text-light-yellow mb-2!">
               State
             </h3>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm! text-gray-300">
               Define valid state transitions to ensure system behavior remains
               predictable and consistent.
             </p>
@@ -57,9 +57,7 @@ function ApproachContainer() {
         {/* Philosophy */}
         <div className="mt-10! flex justify-center">
           <p className="max-w-2xl text-center text-gray-300 bg-[#1a1238] border border-light-purple px-6! py-4! rounded-lg not-md:text-base!">
-            I focus on understanding how systems fail rather than masking issues
-            with quick fixes. Designing with invariants and failure cases in
-            mind helps build reliable backend systems.
+            I focus on building reliable and secure system.
           </p>
         </div>
       </div>

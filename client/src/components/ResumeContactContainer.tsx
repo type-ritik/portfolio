@@ -15,7 +15,7 @@ function ResumeContactContainer() {
           <p className="text-gray-200 bg-[#1a1238] border border-light-purple px-6! py-3! rounded-lg text-center">
             Currently seeking{" "}
             <span className="text-light-yellow font-semibold">
-              Backend / Software Engineering Internship
+              Software Developer Internship
             </span>{" "}
             opportunities.
           </p>
