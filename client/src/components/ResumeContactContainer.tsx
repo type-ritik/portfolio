@@ -27,7 +27,7 @@ function ResumeContactContainer() {
           <div className="bg-[#1a1238] border border-light-purple rounded-xl p-5! text-center hover:scale-[1.03] transition">
             <h3 className="text-lg! font-semibold mb-2!">Resume</h3>
             <a
-              href="https://drive.google.com/file/d/1taNcMsVaaZ04PNdJdXNBgHzRrb0ZcMGs/view?usp=sharing"
+              href="https://docs.google.com/document/d/1TyOJP9FUHVBdjVrc-EbASvp8LV2tafx6piMeODJHxIU/edit?usp=sharing"
               download={"type_ritik.pdf"}
               className="text-light-yellow font-semibold hover:underline"
             >
