@@ -10,7 +10,6 @@ import About from "./components/About";
 // import webBg from "./assets/sebastian.jpg";
 import webBg1 from "./assets/martiin.jpg";
 
-
 function App() {
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
           className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${webBg1})`,
-            opacity: 0.07
+            opacity: 0.07,
           }}
         />
         <div className="fixed inset-0 -z-20 bg-[#0a0a0a]!" />
@@ -27,7 +26,8 @@ function App() {
       <Header />
       <div className="w-full h-full justify-center items-center flex flex-col">
         <Hero />
-        {/* <About />
+        <About />
+        {/*
         <Projects />
         <Skills />
         <TechBanner />
