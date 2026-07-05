@@ -94,7 +94,7 @@ function Hero() {
             >
               <button
                 onClick={scrollToContact}
-                className="gap-2 px-2.5 flex justify-center items-center rounded-md py-1.5 text-sm font-semibold bg-[#ee00ff] hover:bg-[#ee00ff]/90"
+                className="gap-2 px-2.5 flex justify-center items-center rounded-md py-1.5 text-sm cursor-pointer font-semibold bg-[#ee00ff] hover:bg-[#ee00ff]/90"
               >
                 <Mail className="w-4 h-4" />
                 Get in Touch
@@ -116,9 +116,15 @@ function Hero() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="flex gap-6 justify-center text-[#a0a0a0]"
             >
-              <FiGithub className="w-6 h-6" onClick={handleGithub} />
-              <FiLinkedin className="w-6 h-6" onClick={handleLinkedIn} />
-              <Mail className="w-6 h-6" />
+              <FiGithub
+                className="w-6 h-6 cursor-pointer"
+                onClick={handleGithub}
+              />
+              <FiLinkedin
+                className="w-6 h-6 cursor-pointer"
+                onClick={handleLinkedIn}
+              />
+              <Mail className="w-6 h-6 cursor-pointer" />
             </motion.div>
           </div>
         </div>
