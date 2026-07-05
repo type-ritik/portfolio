@@ -6,8 +6,7 @@ function IntroContainer() {
   };
 
   const handleDownloadResume = () => {
-    const pdfUrl =
-      "https://docs.google.com/document/d/1TyOJP9FUHVBdjVrc-EbASvp8LV2tafx6piMeODJHxIU/edit?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/11snLJNjmguSjM0WORDDaEN2y4Mxr9Zto/view?usp=sharing";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "type_ritik.pdf";
