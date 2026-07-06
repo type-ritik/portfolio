@@ -26,10 +26,10 @@ function App() {
       <Header />
       <div className="w-full h-full justify-center items-center flex flex-col">
         <Hero />
-        <About />
         <Projects />
-        {/*
         <Skills />
+        <About />
+        {/*
         <TechBanner />
         <Contacts /> */}
       </div>
