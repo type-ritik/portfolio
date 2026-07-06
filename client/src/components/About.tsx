@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="text-white py-20 relative bg-[#0a0a0a]/80 backdrop-blur-sm"
+        className="w-full h-screen text-white py-20 relative bg-[#0a0a0a]/80 backdrop-blur-sm"
       >
         <div className="container mx-auto px-4">
           <motion.div
