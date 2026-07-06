@@ -36,7 +36,7 @@ function Hero() {
     <>
       <section
         id="home"
-        className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden pt-16 text-white"
+        className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden py-16"
       >
         {/* Background Wrapper */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -64,7 +64,7 @@ function Hero() {
               >
                 Nothing beats like heart
               </motion.div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6  leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6  leading-tight text-[#f5f5f5]">
                 Hi, I&apos;m{" "}
                 <span
                   className="text-[#ee00ff]"
@@ -94,14 +94,14 @@ function Hero() {
             >
               <button
                 onClick={scrollToContact}
-                className="gap-2 px-2.5 flex justify-center items-center rounded-md py-1.5 text-sm cursor-pointer font-semibold bg-[#ee00ff] hover:bg-[#ee00ff]/90"
+                className="gap-2 px-2.5 flex justify-center items-center rounded-md py-1.5 text-sm cursor-pointer font-semibold bg-[#ee00ff] hover:bg-[#ee00ff]/90 text-[#f5f5f5]"
               >
                 <Mail className="w-4 h-4" />
                 Get in Touch
               </button>
 
               <button
-                className="gap-2 px-2.5 rounded-md flex  justify-center items-center py-1.5 text-sm cursor-pointer font-semibold border border-[#ee00ff] text-[#ee00ff] hover:bg-[#ee00ff] hover:text-[#0a0a0a]"
+                className="gap-2 px-2.5 rounded-md flex  justify-center items-center py-1.5 text-sm cursor-pointer font-semibold border border-[#ee00ff] text-[#ee00ff] hover:text-[#f5f5f5] hover:bg-[#ee00ff]"
                 onClick={handleDownloadResume}
               >
                 <Download className="w-4 h-4" />
