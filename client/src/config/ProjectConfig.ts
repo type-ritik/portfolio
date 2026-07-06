@@ -11,6 +11,7 @@ interface ProjectInterface {
     github: string;
   };
   image: string;
+  tag?: Array<string>;
 }
 
 export const projects: Array<ProjectInterface> = [
@@ -28,6 +29,14 @@ export const projects: Array<ProjectInterface> = [
       github: "https://github.com/type-ritik/chat-sys",
     },
     image: ChatSys,
+    tag: [
+      "PostgreSQL",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "GraphQL",
+      "Redis",
+    ],
   },
   {
     name: "Smendship",
@@ -43,6 +52,16 @@ export const projects: Array<ProjectInterface> = [
       github: "https://github.com/type-ritik/smendship",
     },
     image: Smendship,
+    tag: [
+      "PostgreSQL",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Nodemailer",
+      "OAuth",
+      "GraphQL",
+      "Redis",
+    ],
   },
   {
     name: "MERN-Blog",
@@ -58,5 +77,6 @@ export const projects: Array<ProjectInterface> = [
       github: "https://github.com/type-ritik/mern-blog",
     },
     image: Blog,
+    tag: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
   },
 ];

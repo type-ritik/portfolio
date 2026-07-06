@@ -27,8 +27,8 @@ function App() {
       <div className="w-full h-full justify-center items-center flex flex-col">
         <Hero />
         <About />
-        {/*
         <Projects />
+        {/*
         <Skills />
         <TechBanner />
         <Contacts /> */}
