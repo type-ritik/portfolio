@@ -36,7 +36,7 @@ function Hero() {
     <>
       <section
         id="home"
-        className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden py-16"
+        className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden py-20"
       >
         {/* Background Wrapper */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">

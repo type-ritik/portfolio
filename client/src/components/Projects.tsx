@@ -8,7 +8,7 @@ function Projects() {
     <>
       <section
         id="projects"
-        className="bg-[#101010]/40 min-h-screen flex flex-col items-center justify-center overflow-hidden py-16 w-full backdrop-blur-sm"
+        className="bg-[#101010]/40 min-h-screen flex flex-col items-center justify-center overflow-hidden py-20 w-full backdrop-blur-sm"
       >
         <div className="container mx-auto px-4">
           <motion.div
