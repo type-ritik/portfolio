@@ -19,10 +19,9 @@ export const projects: Array<ProjectInterface> = [
     name: "ChatSys",
     description: "Real-Time Messaging System",
     details: [
-      "Developed a real-time messaging backend using Redis pub/sub and PostgreSQL transactional persistence.",
-      "Modeled conversation invariant and ensured atomic message writes",
-      "Designed secure GraphQL mutations preventing inconsistent state transitions",
-      "Build scalable query patterns for conversation history and unread tracking",
+      "Developed a real-time messaging platform using a GraphQL API to retrieve user-specific data, reducing client-side data over-fetching and minimizing payload overhead.",
+      "Engineered user conversation tracking using a GraphQL subscription and WebSockets with Redis pub/sub for real-time chatting",
+      "Constructed a database with PostgreSQL and the Prisma ORM for persistent data, providing scalable queries and unread conversation tracking.",
     ],
     links: {
       liveDemo: "https://type-ritik-chat-sys.onrender.com/",
@@ -42,10 +41,9 @@ export const projects: Array<ProjectInterface> = [
     name: "Smendship",
     description: "Facebook-Oriented Backend System",
     details: [
-      "Build a domain-driven social backend",
-      "Implemented JWT-based authentication with resolver-level authorization",
-      "Designed relational schema ensuring referential integrity and transactional consistency",
-      "Integrated Redis caching layer to optimize ready-heavy operations",
+      " Architected a full-stack social network application using React.js and a GraphQL API to enable single-page rendering and retrieve user-specific data, leveraging queries and mutations to eliminate REST API over-fetching and under-fetching overhead.",
+      "Implemented secure user authentication by integrating Nodemailer and OAuth,facilitating third-party login via Google and GitHub alongside email OTP verification.",
+      "Designed a relational database schema with PostgreSQL and the Prisma ORM, ensuring data consistency and maintaining referential integrity across tables",
     ],
     links: {
       liveDemo: "#",

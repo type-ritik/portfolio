@@ -62,7 +62,7 @@ function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Nothing beats like heart
+                Note & Code
               </motion.div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6  leading-tight text-[#f5f5f5]">
                 Hi, I&apos;m{" "}
@@ -76,12 +76,14 @@ function Hero() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-[#a0a0a0] mb-4 ">
-                Software Developer • AI Engineer • Data Scientist • Data Analyst
+                Backend-Focused Undergraduate Software Engineer
               </p>
               <p className="text-base text-[#a0a0a0] mb-10 max-w-xl mx-auto ">
-                A tech enthusiast building innovative solutions—from intelligent
-                AI systems to scalable web applications. Passionate about
-                solving real-world problems through code, data, and innovation.
+                A versatile software engineer focused on architecting practical
+                digital services, scalable products, and innovative systems.
+                Passionate about solving real-world challenges through
+                data-driven code, leveraging intelligent technology to empower
+                users and enable data-informed decision-making.
               </p>
             </motion.div>
 

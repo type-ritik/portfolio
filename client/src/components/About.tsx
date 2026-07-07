@@ -19,9 +19,11 @@ const About = () => {
               About <span className="text-[#ee00ff]">Me</span>
             </h2>
             <p className="max-w-2xl mx-auto text-[#a0a0a0]">
-              A passionate Computer Science student with a strong foundation in
-              software development, AI/ML, and data analytics. I thrive on
-              solving complex problems and building innovative solutions.
+             A versatile software engineer focused on architecting practical
+                digital services, scalable products, and innovative systems.
+                Passionate about solving real-world challenges through
+                data-driven code, leveraging intelligent technology to empower
+                users and enable data-informed decision-making.
             </p>
           </motion.div>
 

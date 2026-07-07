@@ -47,10 +47,16 @@ function Projects() {
                     <div className="text-[#f5f5f5] leading-none font-bold">
                       {project.name + "- " + project.description}
                     </div>
-                    <p className="text-[#a0a0a0]">{project.details}</p>
+                    <ul className="text-[#a0a0a0]">
+                      {project.details.map((detail, index) => (
+                        <li key={index} className="list-disc">
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <div className="px-6 last:pb-6">
-                    <div className="flex flex-wrap gap-2 mb-4 justify-center items-center">
+                  <div className="px-6 last:pb-6 flex flex-col">
+                    <div className="flex flex-wrap gap-2 mb-4  items-center">
                       {project.tag?.map((item, index) => (
                         <span
                           key={index}
