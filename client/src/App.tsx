@@ -7,7 +7,6 @@ import TechBanner from "./components/TechBanner";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 import About from "./components/About";
-// import webBg from "./assets/sebastian.jpg";
 import webBg1 from "./assets/martiin.jpg";
 
 function App() {
@@ -29,9 +28,10 @@ function App() {
         <Projects />
         <Skills />
         <About />
+        <Contacts />
         {/*
         <TechBanner />
-        <Contacts /> */}
+        */}
       </div>
       <Footer />
     </>
