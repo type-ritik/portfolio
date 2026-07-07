@@ -1,24 +1,33 @@
 import Header from "./components/Header";
 import "./App.css";
-import IntroContainer from "./components/IntroContainer";
-import SkillContainer from "./components/SkillContainer";
-import ProjectContainer from "./components/ProjectContainer";
-import ApproachContainer from "./components/ApproachContainer";
-import ResumeContactContainer from "./components/ResumeContactContainer";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
-import { AboutContainer } from "./components/AboutContainer";
+import About from "./components/About";
+import webBg1 from "./assets/martiin.jpg";
 
 function App() {
   return (
     <>
+      <div className=" relative text-[#f5f5f5]!">
+        <div
+          className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${webBg1})`,
+            opacity: 0.07,
+          }}
+        />
+        <div className="fixed inset-0 -z-20 bg-[#0a0a0a]!" />
+      </div>
       <Header />
-      <div className="w-[80%] h-full mx-auto! my-25!">
-        <IntroContainer />
-        <AboutContainer />
-        <ProjectContainer />
-        <SkillContainer />
-        <ApproachContainer />
-        <ResumeContactContainer />
+      <div className="w-full h-full justify-center items-center flex flex-col">
+        <Hero />
+        <Projects />
+        <Skills />
+        <About />
+        <Contacts />
       </div>
       <Footer />
     </>
