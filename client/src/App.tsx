@@ -3,7 +3,6 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import TechBanner from "./components/TechBanner";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -29,9 +28,6 @@ function App() {
         <Skills />
         <About />
         <Contacts />
-        {/*
-        <TechBanner />
-        */}
       </div>
       <Footer />
     </>
