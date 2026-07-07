@@ -15,7 +15,8 @@ function Header() {
               {headerNavbar.map((item, index) => (
                 <a
                   key={index}
-                  className="px-5   py-2   rounded-full border border-[#f5f5f5]/30 text-[#f5f5f5] text-sm font-semibold tracking-wider hover:bg-[#f5f5f5] hover:text-[#0a0a0a] transition-all duration-200 uppercase cursor-pointer"
+                  href={`#${item.toLocaleLowerCase().split(" ")[0]}`}
+                  className="px-5 py-2 rounded-full border border-[#f5f5f5]/30 text-[#f5f5f5] text-sm font-semibold tracking-wider hover:bg-[#f5f5f5] hover:text-[#0a0a0a] transition-all duration-200 uppercase cursor-pointer"
                 >
                   {item}
                 </a>

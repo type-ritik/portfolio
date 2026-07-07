@@ -48,7 +48,7 @@ function Contacts() {
   return (
     <>
       <section
-        id="contacts"
+        id="contact"
         className="py-20 bg-[#0a0a0a]/80 backdrop-blur-sm w-full"
       >
         <div className="container mx-auto px-4">

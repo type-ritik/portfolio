@@ -13,7 +13,7 @@ function Footer() {
           </div>
           <div className="text-sm text-[#a0a0a0]">
             <span className="text-[#ee00ff]">
-              With great code comes great responsibility
+              Note & Code
             </span>
           </div>
         </div>
